@@ -13,7 +13,7 @@ namespace ApplicationCore.Entities
 
         public string CustomerNumber { get; set; }
 
-        public DateTime CreationTime { get; set; } = DateTime.Now;
+        public DateTimeOffset CreationTime { get; set; } = DateTimeOffset.Now;
 
         public bool Status { get; set; }
 

@@ -3,7 +3,7 @@ using System;
 
 namespace ApplicationCore.Interfaces.UnitOfWork
 {
-    public interface IUnirOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         IUserRepository Users { get; }
 
