@@ -76,12 +76,13 @@ namespace WebAPI
             });
 
 
+            //HANGFIRE JOB TO INSERT DATA AT DATABASE (EVERY 15 MINUTES)
             RecurringJob.AddOrUpdate<InsertData>(x => x.DoJob(),Cron.MinuteInterval(15));
 
-           // BackgroundJob.Schedule<StatusChanger>(x => x.DoJobUpdate(),TimeSpan.FromSeconds(5));
+            //HANGFIRE JOB TO UPDATE DATA'S STATUS (EVERYDAY AT 18:00)
+            RecurringJob.AddOrUpdate<StatusChanger>(x => x.DoJobUpdate(), "0 18 * * ?",TimeZoneInfo.Local);
 
 
-            BackgroundJob.Schedule<StatusChanger>(x => x.DoJobUpdate(),TimeSpan.FromTicks(21));
 
         }
     }

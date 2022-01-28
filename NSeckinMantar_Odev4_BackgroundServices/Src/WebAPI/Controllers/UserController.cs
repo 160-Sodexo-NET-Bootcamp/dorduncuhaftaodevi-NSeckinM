@@ -48,25 +48,6 @@ namespace WebAPI.Controllers
             return await Task.FromResult(Ok(result));
         }
 
-        //You can use this HttpPost request to create new User's object.
-        //Request URL =  https://localhost:44341/api/v1/Users
-        [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] CreateUserDTO UserCreateDto)
-        {
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest("Invalid data.");
-            }
-            //Mapping
-
-            var user = _mapper.Map<User>(UserCreateDto);
-
-            await _unitOfWork.Users.AddAsync(user);
-            _unitOfWork.Complete();
-
-            return CreatedAtAction("GetUser", new { Id = user.Id }, UserCreateDto);
-        }
 
     }
 }
