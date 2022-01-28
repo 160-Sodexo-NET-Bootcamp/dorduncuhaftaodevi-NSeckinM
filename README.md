@@ -1,14 +1,14 @@
 # DorduncuHaftaOdevi
 Tamamladığım projede Clean Architecture Mimarisi uygulanmaya çalışılmıştır.
 EntityFramework ile Generic repository pattern ve unit of work kullanılmıştır.
-Mapping işlemi Automapper eklentisi ile sağlanmıştır.
+Mapping işlemi Automapper eklentisi ile sağlanmıştır. <br>
 Bir adet User Class ı tanımlanarak <b>PostgreSql</b> Veritabanı üzerinde user table oluşturulmuştur.
-Hangfire kullanılarak InsertData ve StatusChanger adında 2 adet job oluşturuldu.
-> <b>InsertData :</b> Bu job yardımı ile her 15 dakikada bir user datası random olarak sisteme kayıt edilir. 
-  <br>
- > <b>StatusChanger :</b> Bu job yardımı ile o gün içinde 08:00 - 18:00 aralıgında oluşturulmuş user datalarının 
+Hangfire kullanılarak InsertData ve StatusChanger adında 2 adet job oluşturulmuştur.
+ > <b>InsertData :</b> Bu job yardımı ile her 15 dakikada bir user datası random olarak sisteme kayıt edilir. 
+<br>
+ ><b>StatusChanger :</b> Bu job yardımı ile o gün içinde 08:00 - 18:00 aralıgında oluşturulmuş user datalarının 
  > status propertyleri hergün saat 18:00 da false dan true ya çekilmiştir.
- > <br>
+<br>
  > Swagger yardımı ile database deki verileri Get metodu ile çekerek kontrol edebilirsiniz.
  > Ayrıca hangfire verileri de PostgreSql veritabanında tutulmuştur.
 
