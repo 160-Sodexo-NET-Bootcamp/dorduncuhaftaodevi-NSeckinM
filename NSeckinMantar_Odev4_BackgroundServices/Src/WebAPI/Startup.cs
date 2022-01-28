@@ -1,3 +1,5 @@
+using Hangfire;
+using Hangfire.PostgreSql;
 using Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -22,11 +24,19 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //For Database Connection With Postgre
             services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("ApplicationDbContext")));
+
+            //For Database Connection Between Postgre and hangfire
+            services.AddHangfire(config =>config.UsePostgreSqlStorage(Configuration.GetConnectionString("HangfireConnection")));
+
+            //For AutoMapper Configuration
+            services.AddAutoMapper(typeof(Startup));
 
             //Dependency Injection for Infrastructure
             services.AddInfraServices();
 
+            //For Json data Serializer
             services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
             services.AddSwaggerGen(c =>
@@ -50,6 +60,11 @@ namespace WebAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //For Hangfire Dashboard Configuration
+
+            app.UseHangfireServer();
+            app.UseHangfireDashboard();
 
             app.UseEndpoints(endpoints =>
             {
