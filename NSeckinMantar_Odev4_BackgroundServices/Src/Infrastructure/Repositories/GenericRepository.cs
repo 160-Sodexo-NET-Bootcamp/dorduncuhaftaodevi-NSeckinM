@@ -31,6 +31,10 @@ namespace Infrastructure.Repositories
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }
+        public async Task UpdateAsync(T entity)
+        {
+            _dbContext.Set<T>().Update(entity);
+        }
 
     }
 }

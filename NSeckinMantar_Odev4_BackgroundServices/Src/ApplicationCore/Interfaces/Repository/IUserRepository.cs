@@ -9,5 +9,8 @@ namespace ApplicationCore.Interfaces.Repository
 {
     public interface IUserRepository : IAsyncGenericRepository<User>
     {
+
+        List<User> GetAllUser();
+
     }
 }

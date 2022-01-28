@@ -77,6 +77,12 @@ namespace WebAPI
 
 
             RecurringJob.AddOrUpdate<InsertData>(x => x.DoJob(),Cron.MinuteInterval(15));
+
+           // BackgroundJob.Schedule<StatusChanger>(x => x.DoJobUpdate(),TimeSpan.FromSeconds(5));
+
+
+            BackgroundJob.Schedule<StatusChanger>(x => x.DoJobUpdate(),TimeSpan.FromTicks(21));
+
         }
     }
 }
