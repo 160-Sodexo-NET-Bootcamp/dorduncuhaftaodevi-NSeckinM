@@ -202,10 +202,6 @@
               "target": "Package",
               "version": "[1.7.28, )"
             },
-            "Hangfire.PostgreSql": {
-              "target": "Package",
-              "version": "[1.9.5, )"
-            },
             "Hangfire.PostgreSql.Npgsql5": {
               "target": "Package",
               "version": "[1.9.5, )"

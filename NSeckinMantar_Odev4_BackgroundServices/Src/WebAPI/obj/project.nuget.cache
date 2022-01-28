@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7BfdQKVzADrblhpwLo/zLf4G1eMZwecN/0w4kDtt3hTQV7xnsQzkYl8+BAqxAUY/Uh/aoR/F1GHm1Iwga4ZPfg==",
+  "dgSpecHash": "cniO7g8B2Kgi6E3ty7dCahys9yonnjrwCt25tc6D2U9JPg48gbgtgsqrQgJXidormPbmSe2a+lwRRl+CjUMSjA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Source\\Repos\\dorduncuhaftaodevi-NSeckinM\\NSeckinMantar_Odev4_BackgroundServices\\Src\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,6 @@
     "C:\\Users\\Asus\\.nuget\\packages\\hangfire\\1.7.28\\hangfire.1.7.28.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\hangfire.aspnetcore\\1.7.28\\hangfire.aspnetcore.1.7.28.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\hangfire.core\\1.7.28\\hangfire.core.1.7.28.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\hangfire.postgresql\\1.9.5\\hangfire.postgresql.1.9.5.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\hangfire.postgresql.npgsql5\\1.9.5\\hangfire.postgresql.npgsql5.1.9.5.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\hangfire.sqlserver\\1.7.28\\hangfire.sqlserver.1.7.28.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -40,7 +39,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.win32.registry\\4.4.0\\microsoft.win32.registry.4.4.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\npgsql\\6.0.0\\npgsql.6.0.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\npgsql\\5.0.10\\npgsql.5.0.10.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\5.0.10\\npgsql.entityframeworkcore.postgresql.5.0.10.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql.design\\1.1.0\\npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

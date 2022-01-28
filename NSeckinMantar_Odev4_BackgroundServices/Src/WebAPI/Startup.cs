@@ -8,7 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using System;
 using System.Text.Json.Serialization;
+using WebAPI.Jobs;
 
 namespace WebAPI
 {
@@ -29,6 +31,8 @@ namespace WebAPI
 
             //For Database Connection Between Postgre and hangfire
             services.AddHangfire(config =>config.UsePostgreSqlStorage(Configuration.GetConnectionString("HangfireConnection")));
+
+            services.AddHangfireServer();
 
             //For AutoMapper Configuration
             services.AddAutoMapper(typeof(Startup));
@@ -63,13 +67,16 @@ namespace WebAPI
 
             //For Hangfire Dashboard Configuration
 
-            app.UseHangfireServer();
+
             app.UseHangfireDashboard();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+
+            RecurringJob.AddOrUpdate<InsertData>(x => x.DoJob(),Cron.MinuteInterval(15));
         }
     }
 }

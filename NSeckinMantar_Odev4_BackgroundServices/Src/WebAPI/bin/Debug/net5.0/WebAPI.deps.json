@@ -36,7 +36,6 @@
           "ApplicationCore": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Hangfire": "1.7.28",
-          "Hangfire.PostgreSql": "1.9.5",
           "Hangfire.PostgreSql.Npgsql5": "1.9.5",
           "Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.13",
@@ -446,29 +445,18 @@
           "lib/netstandard2.0/Hangfire.Core.dll": {}
         }
       },
-      "Hangfire.PostgreSql/1.9.5": {
+      "Hangfire.PostgreSql.Npgsql5/1.9.5": {
         "dependencies": {
           "Dapper": "2.0.123",
           "Hangfire.Core": "1.7.28",
           "Microsoft.CSharp": "4.7.0",
-          "Npgsql": "6.0.0"
+          "Npgsql": "5.0.10"
         },
         "runtime": {
           "lib/netstandard2.0/Hangfire.PostgreSql.dll": {
             "assemblyVersion": "1.9.5.0",
             "fileVersion": "1.9.5.0"
           }
-        },
-        "compile": {
-          "lib/netstandard2.0/Hangfire.PostgreSql.dll": {}
-        }
-      },
-      "Hangfire.PostgreSql.Npgsql5/1.9.5": {
-        "dependencies": {
-          "Dapper": "2.0.123",
-          "Hangfire.Core": "1.7.28",
-          "Microsoft.CSharp": "4.7.0",
-          "Npgsql": "6.0.0"
         },
         "compile": {
           "lib/netstandard2.0/Hangfire.PostgreSql.dll": {}
@@ -749,14 +737,14 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Npgsql/6.0.0": {
+      "Npgsql/5.0.10": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "runtime": {
           "lib/net5.0/Npgsql.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.0.0"
+            "assemblyVersion": "5.0.10.0",
+            "fileVersion": "5.0.10.0"
           }
         },
         "compile": {
@@ -768,7 +756,7 @@
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.13",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.13",
-          "Npgsql": "6.0.0"
+          "Npgsql": "5.0.10"
         },
         "runtime": {
           "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
@@ -787,7 +775,7 @@
           "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Npgsql": "6.0.0",
+          "Npgsql": "5.0.10",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
         "runtime": {
@@ -3294,13 +3282,6 @@
       "path": "hangfire.core/1.7.28",
       "hashPath": "hangfire.core.1.7.28.nupkg.sha512"
     },
-    "Hangfire.PostgreSql/1.9.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-c1jtoT0QTy12thMwopRr78zOKks5r3F09qRfb4y6u6nVTrFZ5oatoOpbKSJ1hzHOrC7ibhbXMZpsi6Gs+cU9HQ==",
-      "path": "hangfire.postgresql/1.9.5",
-      "hashPath": "hangfire.postgresql.1.9.5.nupkg.sha512"
-    },
     "Hangfire.PostgreSql.Npgsql5/1.9.5": {
       "type": "package",
       "serviceable": true,
@@ -3504,12 +3485,12 @@
       "path": "newtonsoft.json/11.0.1",
       "hashPath": "newtonsoft.json.11.0.1.nupkg.sha512"
     },
-    "Npgsql/6.0.0": {
+    "Npgsql/5.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8m2AXZgX7b/VYL6D7aQ1M/hu7vQ+QvVHxaHelriupN2hZqEhcwJkPiICLBVSX/+xm+iN8mZVEUvD7ujmgpTgLw==",
-      "path": "npgsql/6.0.0",
-      "hashPath": "npgsql.6.0.0.nupkg.sha512"
+      "sha512": "sha512-3TB9le3lfu5Hc+LSHqMCVLcA+qUPg1enyM4+u0pMUBmNNGwc0sVPrnfnys2TVZIdkF8Aww/AZlnJHDsnEGqD0g==",
+      "path": "npgsql/5.0.10",
+      "hashPath": "npgsql.5.0.10.nupkg.sha512"
     },
     "Npgsql.EntityFrameworkCore.PostgreSQL/5.0.10": {
       "type": "package",
