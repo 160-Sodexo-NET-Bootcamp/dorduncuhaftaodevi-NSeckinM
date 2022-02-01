@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NSeckinMantar_Odev4_BackgroundServices",
+    "\\NSeckinMantar_Odev4_BackgroundServices\\Src",
+    "\\NSeckinMantar_Odev4_BackgroundServices\\Src\\ApplicationCore",
+    "\\NSeckinMantar_Odev4_BackgroundServices\\Src\\ApplicationCore\\Images",
+    "\\NSeckinMantar_Odev4_BackgroundServices\\Src\\WebAPI",
+    "\\NSeckinMantar_Odev4_BackgroundServices\\Src\\WebAPI\\Controllers"
   ],
-  "SelectedNode": "\\NSeckinMantar_Odev4_BackgroundServices.sln",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
